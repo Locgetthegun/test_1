@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./day_9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>DAY_9</title>
+    <!-- https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot -->
+</head>
+<body>
+    <input type="checkbox" name="sidebar_setup" id="sidebar_setup">
+    <div class="sidebar">
+        <label for="sidebar_setup" class="header_side_bar_exit">
+            <i class="fa-regular fa-circle-right"></i>
+        </label>
+        <div class="side_bar_content">
+            <ul class="side_bar_content_lists">
+                <li><a class="side_bar_content_list" href="">Home</a></li>
+                <li><a class="side_bar_content_list" href="">Latest release</a></li>
+                <li><a class="side_bar_content_list" href="">Build archive</a></li>
+                <li><a class="side_bar_content_list" href="">Nightly builds</a></li>
+                <li><a class="side_bar_content_list" href="">Installation</a></li>
+                <input type="checkbox" name="child" id="child">
+                <label for="child"><a class="side_bar_content_list havechild"><i class="fa-solid fa-angle-right"></i>Projects</a></label>
+                <div class="side_bar_content_list_child">
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> IcedTea-Web</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> JDK Mission Control</a></li>
+                </div>
+                <li><a class="side_bar_content_list" href="">Migration Guide</a></li>
+                <li><a class="side_bar_content_list" href="">Support</a></li>
+                <li><a class="side_bar_content_list" href="">Get involv</a></li>
+                <input type="checkbox" name="child1" id="child1">
+                <label for="child1"><a class="side_bar_content_list havechild"><i class="fa-solid fa-angle-right"></i>Further information</a></label>
+                <div class="side_bar_content_list_child">
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> About</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Sponsors</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Testimonials</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> API</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Blog</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Status</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Quality</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Supported Platforms</a></li>
+                    <li><a class="side_bar_content_list side_bar_content_list_level" href=""> Brand Resources</a></li>
+                </div>
+                <div class="header_apps side_bar_apps">
+                    <a class="header_apps_linked" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="header_apps_linked" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="header_apps_linked" href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a class="header_apps_linked" href=""><i class="fa-brands fa-twitch"></i></a>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <input type="radio" name="choselang" id="choselang1" checked>
+    <input type="radio" name="choselang" id="choselang2">
+    <input type="radio" name="choselang" id="choselang3">
+    <input type="radio" name="choselang" id="choselang4">
+    <!-- FIXED ITEM  -->
+    <div class="choice_langue">
+       <div class="languague">
+           English
+       </div>
+       <div class="languague">
+           Chinese
+       </div>
+       <div class="languague">
+           Germany
+       </div>
+       <div class="languague">
+           Vietnamese
+       </div>
+       <ul class="chose_list">
+            <li class="chose_item"><label for="choselang1">English</label></li>
+            <li class="chose_item"><label for="choselang2">Chinese</label></li>
+            <li class="chose_item"><label for="choselang3">Germany</label></li>
+            <li class="chose_item"><label for="choselang4">Vietnamese</label></li>
+            <li><span>Powered by <a href="#">Localize</a></span></li>
+       </ul>
+    </div>
+
+
+
+
+
+    <!-- FIXED ITEM END -->
+
+
+    <div class="main">
+        <div class="header">
+            <label for="sidebar_setup" class="header_iconbar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="header_logo">
+                <a href="" class="header_logo_linked">
+                    <i class="fa-solid fa-grip"></i>
+                    <span>
+                        AdoptOpenJDK
+                    </span>
+                </a>
+            </div>
+            <div class="header_apps">
+                <a class="header_apps_linked" href=""><i class="fa-brands fa-twitter"></i></a>
+                <a class="header_apps_linked" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="header_apps_linked" href=""><i class="fa-brands fa-youtube"></i></a>
+                <a class="header_apps_linked" href=""><i class="fa-brands fa-twitch"></i></a>
+            </div>
+        </div>
+        <div class="body_content">
+            <h1 class="body_content_title_primary">Prebuilt OpenJDK Binaries for Free!
+
+            </h1>
+            <p class="body_content_title_desciption">
+                Java™ is the world's leading programming language and platform. AdoptOpenJDK uses  <a href="">infrastructure</a> , <a href="">build</a>  and <a href="">test</a>  scripts to produce prebuilt binaries from <a href="">OpenJDK</a>™ class libraries and a choice of either <a href="">OpenJDK</a>  or the <a href="">Eclipse OpenJ9</a>  VM.
+            </p>
+            <p class="body_content_title_desciption">
+                All AdoptOpenJDK binaries and scripts are <a href="">open source licensed</a>  and available for free.
+            </p>
+            <div class="body_content_download_container">
+                <h1>Download for Windows x64</h1>
+                <div class="body_content_download_choisen">
+                    <ul class="choisen_version">
+                        <span>1. Choose a Version</span>
+                        <li class="choisen_version_item">
+                            <input type="radio" name="version" id="version1">
+                            <label for="version1">OpenJDK 8 (LTS)</label>
+                        </li>
+                        <li class="choisen_version_item">
+                            <input type="radio" name="version" id="version2">
+                            <label for="version2">OpenJDK 11 (LTS)</label>
+                        </li>
+                        <li class="choisen_version_item">
+                            <input type="radio" name="version" id="version3">
+                            <label for="version3">OpenJDK 16 (Latest)</label>
+                        </li>
+                    </ul>
+                    <ul class="choisen_JVM">
+                        <span>2. Choose a JVM</span>
+                        <li class="choisen_jvm_item">
+                            <input type="radio" name="jvm" id="jvm1">
+                            <label for="jvm1">HotSpot</label>
+                        </li>
+                        <li class="choisen_jvm_item">
+                            <input type="radio" name="jvm" id="jvm2">
+                            <label for="jvm2">OpenJ9</label>
+                        </li>
+                    </ul>
+                    <div class="helpmeout">
+                        Help Me Choose
+                        <div class="helpmechose_box">
+                            <div class="helpmechose_box_header">
+                                Choosing the right JVM
+                            </div>
+                            <div class="helpmechose_box_content">
+                                <p><span class="helpmechose_box_content_bold">HotSpot</span> is the VM from the OpenJDK community. It is the most widely used VM today and is used in Oracle’s JDK. It is suitable for all workloads.</p>
+                                <p>For more details see <a href="">OpenJDK HotSpot</a>.</p>
+                                <p><span class="helpmechose_box_content_bold">Eclipse OpenJ9</span> is the VM from the Eclipse community. It is an enterprise-grade VM designed for low memory footprint and fast start-up and is used in IBM’s JDK. It is suitable for running all workloads.</p>
+                                <p>For more details see <a href="">Eclipse OpenJ9</a>.</p>
+                                <p><span class="helpmechose_box_content_bold">LTS</span> (Long Term Support). These versions have a longer support timeframe. Suitable for enterprise customers. See <a href="">Support</a> for more information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <a href="" class="button_open">
+                    <div class="button_open_net">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>adoptium.net</span>
+                    </div>
+                    <div class="button_open_description">
+                        AdoptOpenJDK has moved...
+                    </div>
+                </a>
+                <div class="body_content_title_desciption">
+                    <div class=""><a href="">AdoptOpenJDK has moved</a>, the blue download button will take you to the new location.</div>
+                    <div>
+                        You can stil get AdoptOpenJDK binaries by clicking one of the buttons below:
+                    </div>
+                    
+                </div>
+                <a href="" class="otherbutton otherbutton-firt">
+                    <span>Other platforms</span><i class="fa-regular fa-circle-right"></i>
+                </a>
+                <a href="" class="otherbutton">
+                    <span>Release Archive & Nightly builds</span><i class="fa-solid fa-box-archive"></i>
+                </a>
+                <div class="button_lists">
+                    <a href="" class="button_item">Installation<i class="fa-regular fa-circle-right"></i></a>
+                    <a href="" class="button_item">Migration<i class="fa-regular fa-circle-right"></i></a>
+                    <a href="" class="button_item">Support<i class="fa-regular fa-circle-right"></i></a>
+                    <a href="" class="button_item">Get involved<i class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="lists_linked">
+                    <a href="" class="lists_linked_item">About</a>
+                    <div class="lists_linked_border"></div>
+                    <a href="" class="lists_linked_item">FAG</a>
+                    <div class="lists_linked_border"></div>
+
+                    <a href="" class="lists_linked_item">Sponsors</a>
+                    <div class="lists_linked_border"></div>
+
+                    <a href="" class="lists_linked_item">Testimonials</a>
+                    <div class="lists_linked_border"></div>
+
+                    <a href="" class="lists_linked_item">API</a>
+                    <div class="lists_linked_border"></div>
+
+                    <a href="" class="lists_linked_item">Blog</a>
+                    <div class="lists_linked_border"></div>
+
+                    <a href="" class="lists_linked_item">Status</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer_logo_apps">
+                <a href="" class="footer_logo_app">
+                    <img src="https://adoptopenjdk.net/dist/assets/slack.svg" alt=""> 
+                    <span>Stack</span>
+                </a>
+                <a href="" class="footer_logo_app">
+                    <img src="https://adoptopenjdk.net/dist/assets/GitHub.png" alt=""> 
+                    <span>GitHub repos</span>
+                </a>
+                <a href="" class="footer_logo_app">
+                    <img src="https://adoptopenjdk.net/dist/assets/jenkins_headshot.png" alt=""> 
+                    <span>Jenkins Cl</span>
+                </a>
+            </div>
+            <div class="footer_logo_apps_description">
+                <p>
+                    Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
+                </p>
+                <p>Spotted an issue with the website?</p>
+                <p><a href="">Raise a GitHub issue</a> or <a href="">contribute a change!</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
